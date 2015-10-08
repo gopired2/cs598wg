@@ -1,0 +1,29 @@
+MicroBenchmarks
+
+- Compute Flops
+- Mem Bandwidth
+- Cache latency
+- Cache bandwidth
+- Sh Mem bw
+- Sh Mem latency
+- PCIe H2D2H latency/bw
+
+Benchmarks
+
+1) Vector Add
+Run code - get stats
+Build perf estimates
+Compare. 
+Explain diff.
+Use this example to validate microbenchmark results
+
+2) Mat Mul
+Use this to validate things like sh mem and bw etc
+
+Use above two to refine model and estimation technique
+
+Select another 2 or 3 apps to model and improve based on estimates
+
+Declare that we are awesome.
+
+The end.
