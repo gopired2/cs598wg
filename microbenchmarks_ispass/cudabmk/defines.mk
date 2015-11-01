@@ -6,4 +6,4 @@ ROOTDIR=.
 # rather than into the CUDA SDK projects directory.
 ROOTBINDIR=./bin
 
-CUDACCFLAGS=-Xopencc -OPT:Olimit=0
+CUDACCFLAGS=-Xcompiler -O0

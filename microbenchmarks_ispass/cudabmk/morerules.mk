@@ -8,8 +8,8 @@ export CUDA_INSTALL_PATH
 
 
 
-obj/release/%.cu_sm_13_o : %.cu $(CU_DEPS)
-	$(VERBOSE)$(NVCC) -o $@ -c $< -keep $(NVCCFLAGS) -arch sm_13
+obj/release/%.cu_sm_30_o : %.cu $(CU_DEPS)
+	$(VERBOSE)$(NVCC) -o $@ -c $< -keep $(NVCCFLAGS) -arch sm_30
 	$(VERBOSE)sh build_cubin $<
 
 

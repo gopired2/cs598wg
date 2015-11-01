@@ -11,7 +11,7 @@ CCFILES=main.cpp
 CUFILES_sm_10=
 CUFILES_sm_11=
 CUFILES_sm_12=
-CUFILES_sm_13=regfile.cu ksync_uint_dep128.cu pipeline.cu
+CUFILES_sm_30=regfile.cu ksync_uint_dep128.cu pipeline.cu
 CU_DEPS=instructions.h
 # Hack: Because of the obj/release/%.cu_sm_13_o rule in morerules.mk, a side effect of 
 # listing a .cu file under CUFILES_sm_13 is that it will do a modified compile 
