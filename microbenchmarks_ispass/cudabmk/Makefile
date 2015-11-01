@@ -11,10 +11,6 @@ CCFILES=main.cpp
 CUFILES_sm_10=
 CUFILES_sm_11=
 CUFILES_sm_12=
-<<<<<<< HEAD
-=======
-#CUFILES_sm_13=regfile.cu ksync_uint_dep128.cu pipeline.cu
->>>>>>> 926cc8259b15e877d01171cb52de2af73a6a5fea
 CUFILES_sm_30=regfile.cu ksync_uint_dep128.cu pipeline.cu
 CU_DEPS=instructions.h
 # Hack: Because of the obj/release/%.cu_sm_13_o rule in morerules.mk, a side effect of 

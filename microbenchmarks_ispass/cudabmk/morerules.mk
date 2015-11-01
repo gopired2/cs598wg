@@ -7,10 +7,6 @@ otherstuff: $(PTX_OUTPUTS)
 export CUDA_INSTALL_PATH
 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 926cc8259b15e877d01171cb52de2af73a6a5fea
 obj/release/%.cu_sm_30_o : %.cu $(CU_DEPS)
 	$(VERBOSE)$(NVCC) -o $@ -c $< -keep $(NVCCFLAGS) -arch sm_30
 	$(VERBOSE)sh build_cubin $<
