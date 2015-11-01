@@ -1,0 +1,2153 @@
+# 1 "regfile.cudafe1.gpu"
+# 1 "<built-in>"
+# 1 "<command-line>"
+# 1 "/usr/include/stdc-predef.h" 1 3 4
+# 1 "<command-line>" 2
+# 1 "regfile.cudafe1.gpu"
+typedef char __nv_bool;
+struct __C1;struct __C2;struct __C3;struct __type_info;struct __C5;struct __C6;union __C7;struct __C8;
+# 1424 "/usr/local/cuda-7.0//include/driver_types.h"
+struct CUstream_st;
+# 180 "/usr/include/libio.h" 3
+enum __codecvt_result {
+# 182 "/usr/include/libio.h" 3
+__codecvt_ok,
+# 183 "/usr/include/libio.h" 3
+__codecvt_partial,
+# 184 "/usr/include/libio.h" 3
+__codecvt_error,
+# 185 "/usr/include/libio.h" 3
+__codecvt_noconv};
+# 51 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+enum idtype_t {
+# 52 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+P_ALL,
+# 53 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+P_PID,
+# 54 "/usr/include/x86_64-linux-gnu/bits/waitflags.h" 3
+P_PGID};
+# 190 "/usr/include/math.h" 3
+enum _ZUt_ {
+# 191 "/usr/include/math.h" 3
+FP_NAN,
+# 194 "/usr/include/math.h" 3
+FP_INFINITE,
+# 197 "/usr/include/math.h" 3
+FP_ZERO,
+# 200 "/usr/include/math.h" 3
+FP_SUBNORMAL,
+# 203 "/usr/include/math.h" 3
+FP_NORMAL};
+# 302 "/usr/include/math.h" 3
+enum _LIB_VERSION_TYPE {
+# 303 "/usr/include/math.h" 3
+_IEEE_ = (-1),
+# 304 "/usr/include/math.h" 3
+_SVID_,
+# 305 "/usr/include/math.h" 3
+_XOPEN_,
+# 306 "/usr/include/math.h" 3
+_POSIX_,
+# 307 "/usr/include/math.h" 3
+_ISOC_};
+# 128 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_voidIvEUt_E {
+# 128 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt9__is_voidIvE7__valueE = 1};
+# 148 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIbEUt_E {
+# 148 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIbE7__valueE = 1};
+# 155 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIcEUt_E {
+# 155 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIcE7__valueE = 1};
+# 162 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIaEUt_E {
+# 162 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIaE7__valueE = 1};
+# 169 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIhEUt_E {
+# 169 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIhE7__valueE = 1};
+# 177 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIwEUt_E {
+# 177 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIwE7__valueE = 1};
+# 201 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIsEUt_E {
+# 201 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIsE7__valueE = 1};
+# 208 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerItEUt_E {
+# 208 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerItE7__valueE = 1};
+# 215 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIiEUt_E {
+# 215 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIiE7__valueE = 1};
+# 222 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIjEUt_E {
+# 222 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIjE7__valueE = 1};
+# 229 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIlEUt_E {
+# 229 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIlE7__valueE = 1};
+# 236 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerImEUt_E {
+# 236 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerImE7__valueE = 1};
+# 243 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIxEUt_E {
+# 243 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIxE7__valueE = 1};
+# 250 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIyEUt_E {
+# 250 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIyE7__valueE = 1};
+# 268 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt13__is_floatingIfEUt_E {
+# 268 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt13__is_floatingIfE7__valueE = 1};
+# 275 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt13__is_floatingIdEUt_E {
+# 275 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt13__is_floatingIdE7__valueE = 1};
+# 282 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt13__is_floatingIeEUt_E {
+# 282 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt13__is_floatingIeE7__valueE = 1};
+# 358 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_charIcEUt_E {
+# 358 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt9__is_charIcE7__valueE = 1};
+# 366 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_charIwEUt_E {
+# 366 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt9__is_charIwE7__valueE = 1};
+# 381 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_byteIcEUt_E {
+# 381 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt9__is_byteIcE7__valueE = 1};
+# 388 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_byteIaEUt_E {
+# 388 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt9__is_byteIaE7__valueE = 1};
+# 395 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt9__is_byteIhEUt_E {
+# 395 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt9__is_byteIhE7__valueE = 1};
+# 138 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIeEUt_E {
+# 138 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIeE7__valueE};
+# 138 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIdEUt_E {
+# 138 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIdE7__valueE};
+# 138 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+enum _ZNSt12__is_integerIfEUt_E {
+# 138 "/usr/include/c++/4.8/bits/cpp_type_traits.h" 3
+_ZNSt12__is_integerIfE7__valueE};
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+union _ZZ10__signbitlEUt_;
+# 212 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 3
+typedef unsigned long size_t;
+# 1 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 1 3
+# 38 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 3
+# 1 "/usr/local/cuda-7.0//include/host_defines.h" 1 3
+# 39 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 2 3
+
+
+
+
+
+typedef __attribute__((device_builtin_texture_type)) unsigned long long __texture_type__;
+typedef __attribute__((device_builtin_surface_type)) unsigned long long __surface_type__;
+# 180 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 3
+extern __attribute__((device)) void* malloc(size_t);
+extern __attribute__((device)) void free(void*);
+
+extern __attribute__((device)) void __assertfail(
+  const void *message,
+  const void *file,
+  unsigned int line,
+  const void *function,
+  size_t charsize);
+# 233 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 3
+static __attribute__((device)) void __assert_fail(
+  const char *__assertion,
+  const char *__file,
+  unsigned int __line,
+  const char *__function)
+{
+  __assertfail(
+    (const void *)__assertion,
+    (const void *)__file,
+                  __line,
+    (const void *)__function,
+    sizeof(char));
+}
+# 263 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 3
+# 1 "/usr/local/cuda-7.0//include/builtin_types.h" 1 3
+# 56 "/usr/local/cuda-7.0//include/builtin_types.h" 3
+# 1 "/usr/local/cuda-7.0//include/device_types.h" 1 3
+# 53 "/usr/local/cuda-7.0//include/device_types.h" 3
+# 1 "/usr/local/cuda-7.0//include/host_defines.h" 1 3
+# 54 "/usr/local/cuda-7.0//include/device_types.h" 2 3
+
+
+
+
+
+
+
+enum __attribute__((device_builtin)) cudaRoundMode
+{
+    cudaRoundNearest,
+    cudaRoundZero,
+    cudaRoundPosInf,
+    cudaRoundMinInf
+};
+# 57 "/usr/local/cuda-7.0//include/builtin_types.h" 2 3
+
+
+# 1 "/usr/local/cuda-7.0//include/driver_types.h" 1 3
+# 150 "/usr/local/cuda-7.0//include/driver_types.h" 3
+enum __attribute__((device_builtin)) cudaError
+{
+
+
+
+
+
+    cudaSuccess = 0,
+
+
+
+
+
+    cudaErrorMissingConfiguration = 1,
+
+
+
+
+
+    cudaErrorMemoryAllocation = 2,
+
+
+
+
+
+    cudaErrorInitializationError = 3,
+# 185 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorLaunchFailure = 4,
+# 194 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorPriorLaunchFailure = 5,
+# 204 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorLaunchTimeout = 6,
+# 213 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorLaunchOutOfResources = 7,
+
+
+
+
+
+    cudaErrorInvalidDeviceFunction = 8,
+# 228 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorInvalidConfiguration = 9,
+
+
+
+
+
+    cudaErrorInvalidDevice = 10,
+
+
+
+
+
+    cudaErrorInvalidValue = 11,
+
+
+
+
+
+    cudaErrorInvalidPitchValue = 12,
+
+
+
+
+
+    cudaErrorInvalidSymbol = 13,
+
+
+
+
+    cudaErrorMapBufferObjectFailed = 14,
+
+
+
+
+    cudaErrorUnmapBufferObjectFailed = 15,
+
+
+
+
+
+    cudaErrorInvalidHostPointer = 16,
+
+
+
+
+
+    cudaErrorInvalidDevicePointer = 17,
+
+
+
+
+
+    cudaErrorInvalidTexture = 18,
+
+
+
+
+
+    cudaErrorInvalidTextureBinding = 19,
+
+
+
+
+
+
+    cudaErrorInvalidChannelDescriptor = 20,
+
+
+
+
+
+    cudaErrorInvalidMemcpyDirection = 21,
+# 309 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorAddressOfConstant = 22,
+# 318 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorTextureFetchFailed = 23,
+# 327 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorTextureNotBound = 24,
+# 336 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorSynchronizationError = 25,
+
+
+
+
+
+    cudaErrorInvalidFilterSetting = 26,
+
+
+
+
+
+    cudaErrorInvalidNormSetting = 27,
+
+
+
+
+
+
+
+    cudaErrorMixedDeviceExecution = 28,
+
+
+
+
+
+
+    cudaErrorCudartUnloading = 29,
+
+
+
+
+    cudaErrorUnknown = 30,
+
+
+
+
+
+
+
+    cudaErrorNotYetImplemented = 31,
+# 385 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorMemoryValueTooLarge = 32,
+
+
+
+
+
+
+    cudaErrorInvalidResourceHandle = 33,
+
+
+
+
+
+
+
+    cudaErrorNotReady = 34,
+
+
+
+
+
+
+    cudaErrorInsufficientDriver = 35,
+# 420 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorSetOnActiveProcess = 36,
+
+
+
+
+
+    cudaErrorInvalidSurface = 37,
+
+
+
+
+
+    cudaErrorNoDevice = 38,
+
+
+
+
+
+    cudaErrorECCUncorrectable = 39,
+
+
+
+
+    cudaErrorSharedObjectSymbolNotFound = 40,
+
+
+
+
+    cudaErrorSharedObjectInitFailed = 41,
+
+
+
+
+
+    cudaErrorUnsupportedLimit = 42,
+
+
+
+
+
+    cudaErrorDuplicateVariableName = 43,
+
+
+
+
+
+    cudaErrorDuplicateTextureName = 44,
+
+
+
+
+
+    cudaErrorDuplicateSurfaceName = 45,
+# 482 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorDevicesUnavailable = 46,
+
+
+
+
+    cudaErrorInvalidKernelImage = 47,
+
+
+
+
+
+
+
+    cudaErrorNoKernelImageForDevice = 48,
+# 508 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorIncompatibleDriverContext = 49,
+
+
+
+
+
+
+    cudaErrorPeerAccessAlreadyEnabled = 50,
+
+
+
+
+
+
+    cudaErrorPeerAccessNotEnabled = 51,
+
+
+
+
+
+    cudaErrorDeviceAlreadyInUse = 54,
+
+
+
+
+
+
+    cudaErrorProfilerDisabled = 55,
+
+
+
+
+
+
+
+    cudaErrorProfilerNotInitialized = 56,
+
+
+
+
+
+
+    cudaErrorProfilerAlreadyStarted = 57,
+
+
+
+
+
+
+     cudaErrorProfilerAlreadyStopped = 58,
+
+
+
+
+
+
+
+    cudaErrorAssert = 59,
+
+
+
+
+
+
+    cudaErrorTooManyPeers = 60,
+
+
+
+
+
+    cudaErrorHostMemoryAlreadyRegistered = 61,
+
+
+
+
+
+    cudaErrorHostMemoryNotRegistered = 62,
+
+
+
+
+    cudaErrorOperatingSystem = 63,
+
+
+
+
+
+    cudaErrorPeerAccessUnsupported = 64,
+
+
+
+
+
+
+    cudaErrorLaunchMaxDepthExceeded = 65,
+
+
+
+
+
+
+
+    cudaErrorLaunchFileScopedTex = 66,
+
+
+
+
+
+
+
+    cudaErrorLaunchFileScopedSurf = 67,
+# 633 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorSyncDepthExceeded = 68,
+# 645 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorLaunchPendingCountExceeded = 69,
+
+
+
+
+    cudaErrorNotPermitted = 70,
+
+
+
+
+
+    cudaErrorNotSupported = 71,
+# 665 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorHardwareStackError = 72,
+
+
+
+
+
+
+
+    cudaErrorIllegalInstruction = 73,
+# 682 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorMisalignedAddress = 74,
+# 693 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    cudaErrorInvalidAddressSpace = 75,
+
+
+
+
+
+
+
+    cudaErrorInvalidPc = 76,
+
+
+
+
+
+
+
+    cudaErrorIllegalAddress = 77,
+
+
+
+
+
+    cudaErrorInvalidPtx = 78,
+
+
+
+
+    cudaErrorInvalidGraphicsContext = 79,
+
+
+
+
+
+    cudaErrorStartupFailure = 0x7f,
+
+
+
+
+
+
+
+    cudaErrorApiFailureBase = 10000
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaChannelFormatKind
+{
+    cudaChannelFormatKindSigned = 0,
+    cudaChannelFormatKindUnsigned = 1,
+    cudaChannelFormatKindFloat = 2,
+    cudaChannelFormatKindNone = 3
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaChannelFormatDesc
+{
+    int x;
+    int y;
+    int z;
+    int w;
+    enum cudaChannelFormatKind f;
+};
+
+
+
+
+typedef struct cudaArray *cudaArray_t;
+
+
+
+
+typedef const struct cudaArray *cudaArray_const_t;
+
+struct cudaArray;
+
+
+
+
+typedef struct cudaMipmappedArray *cudaMipmappedArray_t;
+
+
+
+
+typedef const struct cudaMipmappedArray *cudaMipmappedArray_const_t;
+
+struct cudaMipmappedArray;
+
+
+
+
+enum __attribute__((device_builtin)) cudaMemoryType
+{
+    cudaMemoryTypeHost = 1,
+    cudaMemoryTypeDevice = 2
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaMemcpyKind
+{
+    cudaMemcpyHostToHost = 0,
+    cudaMemcpyHostToDevice = 1,
+    cudaMemcpyDeviceToHost = 2,
+    cudaMemcpyDeviceToDevice = 3,
+    cudaMemcpyDefault = 4
+};
+
+
+
+
+
+
+struct __attribute__((device_builtin)) cudaPitchedPtr
+{
+    void *ptr;
+    size_t pitch;
+    size_t xsize;
+    size_t ysize;
+};
+
+
+
+
+
+
+struct __attribute__((device_builtin)) cudaExtent
+{
+    size_t width;
+    size_t height;
+    size_t depth;
+};
+
+
+
+
+
+
+struct __attribute__((device_builtin)) cudaPos
+{
+    size_t x;
+    size_t y;
+    size_t z;
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaMemcpy3DParms
+{
+    cudaArray_t srcArray;
+    struct cudaPos srcPos;
+    struct cudaPitchedPtr srcPtr;
+
+    cudaArray_t dstArray;
+    struct cudaPos dstPos;
+    struct cudaPitchedPtr dstPtr;
+
+    struct cudaExtent extent;
+    enum cudaMemcpyKind kind;
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaMemcpy3DPeerParms
+{
+    cudaArray_t srcArray;
+    struct cudaPos srcPos;
+    struct cudaPitchedPtr srcPtr;
+    int srcDevice;
+
+    cudaArray_t dstArray;
+    struct cudaPos dstPos;
+    struct cudaPitchedPtr dstPtr;
+    int dstDevice;
+
+    struct cudaExtent extent;
+};
+
+
+
+
+struct cudaGraphicsResource;
+
+
+
+
+enum __attribute__((device_builtin)) cudaGraphicsRegisterFlags
+{
+    cudaGraphicsRegisterFlagsNone = 0,
+    cudaGraphicsRegisterFlagsReadOnly = 1,
+    cudaGraphicsRegisterFlagsWriteDiscard = 2,
+    cudaGraphicsRegisterFlagsSurfaceLoadStore = 4,
+    cudaGraphicsRegisterFlagsTextureGather = 8
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaGraphicsMapFlags
+{
+    cudaGraphicsMapFlagsNone = 0,
+    cudaGraphicsMapFlagsReadOnly = 1,
+    cudaGraphicsMapFlagsWriteDiscard = 2
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaGraphicsCubeFace
+{
+    cudaGraphicsCubeFacePositiveX = 0x00,
+    cudaGraphicsCubeFaceNegativeX = 0x01,
+    cudaGraphicsCubeFacePositiveY = 0x02,
+    cudaGraphicsCubeFaceNegativeY = 0x03,
+    cudaGraphicsCubeFacePositiveZ = 0x04,
+    cudaGraphicsCubeFaceNegativeZ = 0x05
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaResourceType
+{
+    cudaResourceTypeArray = 0x00,
+    cudaResourceTypeMipmappedArray = 0x01,
+    cudaResourceTypeLinear = 0x02,
+    cudaResourceTypePitch2D = 0x03
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaResourceViewFormat
+{
+    cudaResViewFormatNone = 0x00,
+    cudaResViewFormatUnsignedChar1 = 0x01,
+    cudaResViewFormatUnsignedChar2 = 0x02,
+    cudaResViewFormatUnsignedChar4 = 0x03,
+    cudaResViewFormatSignedChar1 = 0x04,
+    cudaResViewFormatSignedChar2 = 0x05,
+    cudaResViewFormatSignedChar4 = 0x06,
+    cudaResViewFormatUnsignedShort1 = 0x07,
+    cudaResViewFormatUnsignedShort2 = 0x08,
+    cudaResViewFormatUnsignedShort4 = 0x09,
+    cudaResViewFormatSignedShort1 = 0x0a,
+    cudaResViewFormatSignedShort2 = 0x0b,
+    cudaResViewFormatSignedShort4 = 0x0c,
+    cudaResViewFormatUnsignedInt1 = 0x0d,
+    cudaResViewFormatUnsignedInt2 = 0x0e,
+    cudaResViewFormatUnsignedInt4 = 0x0f,
+    cudaResViewFormatSignedInt1 = 0x10,
+    cudaResViewFormatSignedInt2 = 0x11,
+    cudaResViewFormatSignedInt4 = 0x12,
+    cudaResViewFormatHalf1 = 0x13,
+    cudaResViewFormatHalf2 = 0x14,
+    cudaResViewFormatHalf4 = 0x15,
+    cudaResViewFormatFloat1 = 0x16,
+    cudaResViewFormatFloat2 = 0x17,
+    cudaResViewFormatFloat4 = 0x18,
+    cudaResViewFormatUnsignedBlockCompressed1 = 0x19,
+    cudaResViewFormatUnsignedBlockCompressed2 = 0x1a,
+    cudaResViewFormatUnsignedBlockCompressed3 = 0x1b,
+    cudaResViewFormatUnsignedBlockCompressed4 = 0x1c,
+    cudaResViewFormatSignedBlockCompressed4 = 0x1d,
+    cudaResViewFormatUnsignedBlockCompressed5 = 0x1e,
+    cudaResViewFormatSignedBlockCompressed5 = 0x1f,
+    cudaResViewFormatUnsignedBlockCompressed6H = 0x20,
+    cudaResViewFormatSignedBlockCompressed6H = 0x21,
+    cudaResViewFormatUnsignedBlockCompressed7 = 0x22
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaResourceDesc {
+ enum cudaResourceType resType;
+
+ union {
+  struct {
+   cudaArray_t array;
+  } array;
+        struct {
+            cudaMipmappedArray_t mipmap;
+        } mipmap;
+  struct {
+   void *devPtr;
+   struct cudaChannelFormatDesc desc;
+   size_t sizeInBytes;
+  } linear;
+  struct {
+   void *devPtr;
+   struct cudaChannelFormatDesc desc;
+   size_t width;
+   size_t height;
+   size_t pitchInBytes;
+  } pitch2D;
+ } res;
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaResourceViewDesc
+{
+    enum cudaResourceViewFormat format;
+    size_t width;
+    size_t height;
+    size_t depth;
+    unsigned int firstMipmapLevel;
+    unsigned int lastMipmapLevel;
+    unsigned int firstLayer;
+    unsigned int lastLayer;
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaPointerAttributes
+{
+
+
+
+
+    enum cudaMemoryType memoryType;
+# 1033 "/usr/local/cuda-7.0//include/driver_types.h" 3
+    int device;
+
+
+
+
+
+    void *devicePointer;
+
+
+
+
+
+    void *hostPointer;
+
+
+
+
+    int isManaged;
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaFuncAttributes
+{
+
+
+
+
+
+   size_t sharedSizeBytes;
+
+
+
+
+
+   size_t constSizeBytes;
+
+
+
+
+   size_t localSizeBytes;
+
+
+
+
+
+
+   int maxThreadsPerBlock;
+
+
+
+
+   int numRegs;
+
+
+
+
+
+
+   int ptxVersion;
+
+
+
+
+
+
+   int binaryVersion;
+
+
+
+
+
+   int cacheModeCA;
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaFuncCache
+{
+    cudaFuncCachePreferNone = 0,
+    cudaFuncCachePreferShared = 1,
+    cudaFuncCachePreferL1 = 2,
+    cudaFuncCachePreferEqual = 3
+};
+
+
+
+
+
+enum __attribute__((device_builtin)) cudaSharedMemConfig
+{
+    cudaSharedMemBankSizeDefault = 0,
+    cudaSharedMemBankSizeFourByte = 1,
+    cudaSharedMemBankSizeEightByte = 2
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaComputeMode
+{
+    cudaComputeModeDefault = 0,
+    cudaComputeModeExclusive = 1,
+    cudaComputeModeProhibited = 2,
+    cudaComputeModeExclusiveProcess = 3
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaLimit
+{
+    cudaLimitStackSize = 0x00,
+    cudaLimitPrintfFifoSize = 0x01,
+    cudaLimitMallocHeapSize = 0x02,
+    cudaLimitDevRuntimeSyncDepth = 0x03,
+    cudaLimitDevRuntimePendingLaunchCount = 0x04
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaOutputMode
+{
+    cudaKeyValuePair = 0x00,
+    cudaCSV = 0x01
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaDeviceAttr
+{
+    cudaDevAttrMaxThreadsPerBlock = 1,
+    cudaDevAttrMaxBlockDimX = 2,
+    cudaDevAttrMaxBlockDimY = 3,
+    cudaDevAttrMaxBlockDimZ = 4,
+    cudaDevAttrMaxGridDimX = 5,
+    cudaDevAttrMaxGridDimY = 6,
+    cudaDevAttrMaxGridDimZ = 7,
+    cudaDevAttrMaxSharedMemoryPerBlock = 8,
+    cudaDevAttrTotalConstantMemory = 9,
+    cudaDevAttrWarpSize = 10,
+    cudaDevAttrMaxPitch = 11,
+    cudaDevAttrMaxRegistersPerBlock = 12,
+    cudaDevAttrClockRate = 13,
+    cudaDevAttrTextureAlignment = 14,
+    cudaDevAttrGpuOverlap = 15,
+    cudaDevAttrMultiProcessorCount = 16,
+    cudaDevAttrKernelExecTimeout = 17,
+    cudaDevAttrIntegrated = 18,
+    cudaDevAttrCanMapHostMemory = 19,
+    cudaDevAttrComputeMode = 20,
+    cudaDevAttrMaxTexture1DWidth = 21,
+    cudaDevAttrMaxTexture2DWidth = 22,
+    cudaDevAttrMaxTexture2DHeight = 23,
+    cudaDevAttrMaxTexture3DWidth = 24,
+    cudaDevAttrMaxTexture3DHeight = 25,
+    cudaDevAttrMaxTexture3DDepth = 26,
+    cudaDevAttrMaxTexture2DLayeredWidth = 27,
+    cudaDevAttrMaxTexture2DLayeredHeight = 28,
+    cudaDevAttrMaxTexture2DLayeredLayers = 29,
+    cudaDevAttrSurfaceAlignment = 30,
+    cudaDevAttrConcurrentKernels = 31,
+    cudaDevAttrEccEnabled = 32,
+    cudaDevAttrPciBusId = 33,
+    cudaDevAttrPciDeviceId = 34,
+    cudaDevAttrTccDriver = 35,
+    cudaDevAttrMemoryClockRate = 36,
+    cudaDevAttrGlobalMemoryBusWidth = 37,
+    cudaDevAttrL2CacheSize = 38,
+    cudaDevAttrMaxThreadsPerMultiProcessor = 39,
+    cudaDevAttrAsyncEngineCount = 40,
+    cudaDevAttrUnifiedAddressing = 41,
+    cudaDevAttrMaxTexture1DLayeredWidth = 42,
+    cudaDevAttrMaxTexture1DLayeredLayers = 43,
+    cudaDevAttrMaxTexture2DGatherWidth = 45,
+    cudaDevAttrMaxTexture2DGatherHeight = 46,
+    cudaDevAttrMaxTexture3DWidthAlt = 47,
+    cudaDevAttrMaxTexture3DHeightAlt = 48,
+    cudaDevAttrMaxTexture3DDepthAlt = 49,
+    cudaDevAttrPciDomainId = 50,
+    cudaDevAttrTexturePitchAlignment = 51,
+    cudaDevAttrMaxTextureCubemapWidth = 52,
+    cudaDevAttrMaxTextureCubemapLayeredWidth = 53,
+    cudaDevAttrMaxTextureCubemapLayeredLayers = 54,
+    cudaDevAttrMaxSurface1DWidth = 55,
+    cudaDevAttrMaxSurface2DWidth = 56,
+    cudaDevAttrMaxSurface2DHeight = 57,
+    cudaDevAttrMaxSurface3DWidth = 58,
+    cudaDevAttrMaxSurface3DHeight = 59,
+    cudaDevAttrMaxSurface3DDepth = 60,
+    cudaDevAttrMaxSurface1DLayeredWidth = 61,
+    cudaDevAttrMaxSurface1DLayeredLayers = 62,
+    cudaDevAttrMaxSurface2DLayeredWidth = 63,
+    cudaDevAttrMaxSurface2DLayeredHeight = 64,
+    cudaDevAttrMaxSurface2DLayeredLayers = 65,
+    cudaDevAttrMaxSurfaceCubemapWidth = 66,
+    cudaDevAttrMaxSurfaceCubemapLayeredWidth = 67,
+    cudaDevAttrMaxSurfaceCubemapLayeredLayers = 68,
+    cudaDevAttrMaxTexture1DLinearWidth = 69,
+    cudaDevAttrMaxTexture2DLinearWidth = 70,
+    cudaDevAttrMaxTexture2DLinearHeight = 71,
+    cudaDevAttrMaxTexture2DLinearPitch = 72,
+    cudaDevAttrMaxTexture2DMipmappedWidth = 73,
+    cudaDevAttrMaxTexture2DMipmappedHeight = 74,
+    cudaDevAttrComputeCapabilityMajor = 75,
+    cudaDevAttrComputeCapabilityMinor = 76,
+    cudaDevAttrMaxTexture1DMipmappedWidth = 77,
+    cudaDevAttrStreamPrioritiesSupported = 78,
+    cudaDevAttrGlobalL1CacheSupported = 79,
+    cudaDevAttrLocalL1CacheSupported = 80,
+    cudaDevAttrMaxSharedMemoryPerMultiprocessor = 81,
+    cudaDevAttrMaxRegistersPerMultiprocessor = 82,
+    cudaDevAttrManagedMemory = 83,
+    cudaDevAttrIsMultiGpuBoard = 84,
+    cudaDevAttrMultiGpuBoardGroupID = 85
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaDeviceProp
+{
+    char name[256];
+    size_t totalGlobalMem;
+    size_t sharedMemPerBlock;
+    int regsPerBlock;
+    int warpSize;
+    size_t memPitch;
+    int maxThreadsPerBlock;
+    int maxThreadsDim[3];
+    int maxGridSize[3];
+    int clockRate;
+    size_t totalConstMem;
+    int major;
+    int minor;
+    size_t textureAlignment;
+    size_t texturePitchAlignment;
+    int deviceOverlap;
+    int multiProcessorCount;
+    int kernelExecTimeoutEnabled;
+    int integrated;
+    int canMapHostMemory;
+    int computeMode;
+    int maxTexture1D;
+    int maxTexture1DMipmap;
+    int maxTexture1DLinear;
+    int maxTexture2D[2];
+    int maxTexture2DMipmap[2];
+    int maxTexture2DLinear[3];
+    int maxTexture2DGather[2];
+    int maxTexture3D[3];
+    int maxTexture3DAlt[3];
+    int maxTextureCubemap;
+    int maxTexture1DLayered[2];
+    int maxTexture2DLayered[3];
+    int maxTextureCubemapLayered[2];
+    int maxSurface1D;
+    int maxSurface2D[2];
+    int maxSurface3D[3];
+    int maxSurface1DLayered[2];
+    int maxSurface2DLayered[3];
+    int maxSurfaceCubemap;
+    int maxSurfaceCubemapLayered[2];
+    size_t surfaceAlignment;
+    int concurrentKernels;
+    int ECCEnabled;
+    int pciBusID;
+    int pciDeviceID;
+    int pciDomainID;
+    int tccDriver;
+    int asyncEngineCount;
+    int unifiedAddressing;
+    int memoryClockRate;
+    int memoryBusWidth;
+    int l2CacheSize;
+    int maxThreadsPerMultiProcessor;
+    int streamPrioritiesSupported;
+    int globalL1CacheSupported;
+    int localL1CacheSupported;
+    size_t sharedMemPerMultiprocessor;
+    int regsPerMultiprocessor;
+    int managedMemory;
+    int isMultiGpuBoard;
+    int multiGpuBoardGroupID;
+};
+# 1397 "/usr/local/cuda-7.0//include/driver_types.h" 3
+typedef __attribute__((device_builtin)) struct __attribute__((device_builtin)) cudaIpcEventHandle_st
+{
+    char reserved[64];
+}cudaIpcEventHandle_t;
+
+
+
+
+typedef __attribute__((device_builtin)) struct __attribute__((device_builtin)) cudaIpcMemHandle_st
+{
+    char reserved[64];
+}cudaIpcMemHandle_t;
+# 1419 "/usr/local/cuda-7.0//include/driver_types.h" 3
+typedef __attribute__((device_builtin)) enum cudaError cudaError_t;
+
+
+
+
+typedef __attribute__((device_builtin)) struct CUstream_st *cudaStream_t;
+
+
+
+
+typedef __attribute__((device_builtin)) struct CUevent_st *cudaEvent_t;
+
+
+
+
+typedef __attribute__((device_builtin)) struct cudaGraphicsResource *cudaGraphicsResource_t;
+
+
+
+
+typedef __attribute__((device_builtin)) struct CUuuid_st cudaUUID_t;
+
+
+
+
+typedef __attribute__((device_builtin)) enum cudaOutputMode cudaOutputMode_t;
+# 60 "/usr/local/cuda-7.0//include/builtin_types.h" 2 3
+
+
+# 1 "/usr/local/cuda-7.0//include/surface_types.h" 1 3
+# 84 "/usr/local/cuda-7.0//include/surface_types.h" 3
+enum __attribute__((device_builtin)) cudaSurfaceBoundaryMode
+{
+    cudaBoundaryModeZero = 0,
+    cudaBoundaryModeClamp = 1,
+    cudaBoundaryModeTrap = 2
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaSurfaceFormatMode
+{
+    cudaFormatModeForced = 0,
+    cudaFormatModeAuto = 1
+};
+
+
+
+
+struct __attribute__((device_builtin)) surfaceReference
+{
+
+
+
+    struct cudaChannelFormatDesc channelDesc;
+};
+
+
+
+
+typedef __attribute__((device_builtin)) unsigned long long cudaSurfaceObject_t;
+# 63 "/usr/local/cuda-7.0//include/builtin_types.h" 2 3
+# 1 "/usr/local/cuda-7.0//include/texture_types.h" 1 3
+# 84 "/usr/local/cuda-7.0//include/texture_types.h" 3
+enum __attribute__((device_builtin)) cudaTextureAddressMode
+{
+    cudaAddressModeWrap = 0,
+    cudaAddressModeClamp = 1,
+    cudaAddressModeMirror = 2,
+    cudaAddressModeBorder = 3
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaTextureFilterMode
+{
+    cudaFilterModePoint = 0,
+    cudaFilterModeLinear = 1
+};
+
+
+
+
+enum __attribute__((device_builtin)) cudaTextureReadMode
+{
+    cudaReadModeElementType = 0,
+    cudaReadModeNormalizedFloat = 1
+};
+
+
+
+
+struct __attribute__((device_builtin)) textureReference
+{
+
+
+
+    int normalized;
+
+
+
+    enum cudaTextureFilterMode filterMode;
+
+
+
+    enum cudaTextureAddressMode addressMode[3];
+
+
+
+    struct cudaChannelFormatDesc channelDesc;
+
+
+
+    int sRGB;
+
+
+
+    unsigned int maxAnisotropy;
+
+
+
+    enum cudaTextureFilterMode mipmapFilterMode;
+
+
+
+    float mipmapLevelBias;
+
+
+
+    float minMipmapLevelClamp;
+
+
+
+    float maxMipmapLevelClamp;
+    int __cudaReserved[15];
+};
+
+
+
+
+struct __attribute__((device_builtin)) cudaTextureDesc
+{
+
+
+
+    enum cudaTextureAddressMode addressMode[3];
+
+
+
+    enum cudaTextureFilterMode filterMode;
+
+
+
+    enum cudaTextureReadMode readMode;
+
+
+
+    int sRGB;
+
+
+
+    int normalizedCoords;
+
+
+
+    unsigned int maxAnisotropy;
+
+
+
+    enum cudaTextureFilterMode mipmapFilterMode;
+
+
+
+    float mipmapLevelBias;
+
+
+
+    float minMipmapLevelClamp;
+
+
+
+    float maxMipmapLevelClamp;
+};
+
+
+
+
+typedef __attribute__((device_builtin)) unsigned long long cudaTextureObject_t;
+# 64 "/usr/local/cuda-7.0//include/builtin_types.h" 2 3
+# 1 "/usr/local/cuda-7.0//include/vector_types.h" 1 3
+# 61 "/usr/local/cuda-7.0//include/vector_types.h" 3
+# 1 "/usr/local/cuda-7.0//include/builtin_types.h" 1 3
+# 64 "/usr/local/cuda-7.0//include/builtin_types.h" 3
+# 1 "/usr/local/cuda-7.0//include/vector_types.h" 1 3
+# 64 "/usr/local/cuda-7.0//include/builtin_types.h" 2 3
+# 62 "/usr/local/cuda-7.0//include/vector_types.h" 2 3
+# 98 "/usr/local/cuda-7.0//include/vector_types.h" 3
+struct __attribute__((device_builtin)) char1
+{
+    signed char x;
+};
+
+struct __attribute__((device_builtin)) uchar1
+{
+    unsigned char x;
+};
+
+
+struct __attribute__((device_builtin)) __attribute__((aligned(2))) char2
+{
+    signed char x, y;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(2))) uchar2
+{
+    unsigned char x, y;
+};
+
+struct __attribute__((device_builtin)) char3
+{
+    signed char x, y, z;
+};
+
+struct __attribute__((device_builtin)) uchar3
+{
+    unsigned char x, y, z;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(4))) char4
+{
+    signed char x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(4))) uchar4
+{
+    unsigned char x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) short1
+{
+    short x;
+};
+
+struct __attribute__((device_builtin)) ushort1
+{
+    unsigned short x;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(4))) short2
+{
+    short x, y;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(4))) ushort2
+{
+    unsigned short x, y;
+};
+
+struct __attribute__((device_builtin)) short3
+{
+    short x, y, z;
+};
+
+struct __attribute__((device_builtin)) ushort3
+{
+    unsigned short x, y, z;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(8))) short4 { short x; short y; short z; short w; };
+struct __attribute__((device_builtin)) __attribute__((aligned(8))) ushort4 { unsigned short x; unsigned short y; unsigned short z; unsigned short w; };
+
+struct __attribute__((device_builtin)) int1
+{
+    int x;
+};
+
+struct __attribute__((device_builtin)) uint1
+{
+    unsigned int x;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(8))) int2 { int x; int y; };
+struct __attribute__((device_builtin)) __attribute__((aligned(8))) uint2 { unsigned int x; unsigned int y; };
+
+struct __attribute__((device_builtin)) int3
+{
+    int x, y, z;
+};
+
+struct __attribute__((device_builtin)) uint3
+{
+    unsigned int x, y, z;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) int4
+{
+    int x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) uint4
+{
+    unsigned int x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) long1
+{
+    long int x;
+};
+
+struct __attribute__((device_builtin)) ulong1
+{
+    unsigned long x;
+};
+
+
+
+
+
+
+struct __attribute__((device_builtin)) __attribute__((aligned(2*sizeof(long int)))) long2
+{
+    long int x, y;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(2*sizeof(unsigned long int)))) ulong2
+{
+    unsigned long int x, y;
+};
+
+
+
+struct __attribute__((device_builtin)) long3
+{
+    long int x, y, z;
+};
+
+struct __attribute__((device_builtin)) ulong3
+{
+    unsigned long int x, y, z;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) long4
+{
+    long int x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) ulong4
+{
+    unsigned long int x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) float1
+{
+    float x;
+};
+# 274 "/usr/local/cuda-7.0//include/vector_types.h" 3
+struct __attribute__((device_builtin)) __attribute__((aligned(8))) float2 { float x; float y; };
+
+
+
+
+struct __attribute__((device_builtin)) float3
+{
+    float x, y, z;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) float4
+{
+    float x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) longlong1
+{
+    long long int x;
+};
+
+struct __attribute__((device_builtin)) ulonglong1
+{
+    unsigned long long int x;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) longlong2
+{
+    long long int x, y;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) ulonglong2
+{
+    unsigned long long int x, y;
+};
+
+struct __attribute__((device_builtin)) longlong3
+{
+    long long int x, y, z;
+};
+
+struct __attribute__((device_builtin)) ulonglong3
+{
+    unsigned long long int x, y, z;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) longlong4
+{
+    long long int x, y, z ,w;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) ulonglong4
+{
+    unsigned long long int x, y, z, w;
+};
+
+struct __attribute__((device_builtin)) double1
+{
+    double x;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) double2
+{
+    double x, y;
+};
+
+struct __attribute__((device_builtin)) double3
+{
+    double x, y, z;
+};
+
+struct __attribute__((device_builtin)) __attribute__((aligned(16))) double4
+{
+    double x, y, z, w;
+};
+# 362 "/usr/local/cuda-7.0//include/vector_types.h" 3
+typedef __attribute__((device_builtin)) struct char1 char1;
+typedef __attribute__((device_builtin)) struct uchar1 uchar1;
+typedef __attribute__((device_builtin)) struct char2 char2;
+typedef __attribute__((device_builtin)) struct uchar2 uchar2;
+typedef __attribute__((device_builtin)) struct char3 char3;
+typedef __attribute__((device_builtin)) struct uchar3 uchar3;
+typedef __attribute__((device_builtin)) struct char4 char4;
+typedef __attribute__((device_builtin)) struct uchar4 uchar4;
+typedef __attribute__((device_builtin)) struct short1 short1;
+typedef __attribute__((device_builtin)) struct ushort1 ushort1;
+typedef __attribute__((device_builtin)) struct short2 short2;
+typedef __attribute__((device_builtin)) struct ushort2 ushort2;
+typedef __attribute__((device_builtin)) struct short3 short3;
+typedef __attribute__((device_builtin)) struct ushort3 ushort3;
+typedef __attribute__((device_builtin)) struct short4 short4;
+typedef __attribute__((device_builtin)) struct ushort4 ushort4;
+typedef __attribute__((device_builtin)) struct int1 int1;
+typedef __attribute__((device_builtin)) struct uint1 uint1;
+typedef __attribute__((device_builtin)) struct int2 int2;
+typedef __attribute__((device_builtin)) struct uint2 uint2;
+typedef __attribute__((device_builtin)) struct int3 int3;
+typedef __attribute__((device_builtin)) struct uint3 uint3;
+typedef __attribute__((device_builtin)) struct int4 int4;
+typedef __attribute__((device_builtin)) struct uint4 uint4;
+typedef __attribute__((device_builtin)) struct long1 long1;
+typedef __attribute__((device_builtin)) struct ulong1 ulong1;
+typedef __attribute__((device_builtin)) struct long2 long2;
+typedef __attribute__((device_builtin)) struct ulong2 ulong2;
+typedef __attribute__((device_builtin)) struct long3 long3;
+typedef __attribute__((device_builtin)) struct ulong3 ulong3;
+typedef __attribute__((device_builtin)) struct long4 long4;
+typedef __attribute__((device_builtin)) struct ulong4 ulong4;
+typedef __attribute__((device_builtin)) struct float1 float1;
+typedef __attribute__((device_builtin)) struct float2 float2;
+typedef __attribute__((device_builtin)) struct float3 float3;
+typedef __attribute__((device_builtin)) struct float4 float4;
+typedef __attribute__((device_builtin)) struct longlong1 longlong1;
+typedef __attribute__((device_builtin)) struct ulonglong1 ulonglong1;
+typedef __attribute__((device_builtin)) struct longlong2 longlong2;
+typedef __attribute__((device_builtin)) struct ulonglong2 ulonglong2;
+typedef __attribute__((device_builtin)) struct longlong3 longlong3;
+typedef __attribute__((device_builtin)) struct ulonglong3 ulonglong3;
+typedef __attribute__((device_builtin)) struct longlong4 longlong4;
+typedef __attribute__((device_builtin)) struct ulonglong4 ulonglong4;
+typedef __attribute__((device_builtin)) struct double1 double1;
+typedef __attribute__((device_builtin)) struct double2 double2;
+typedef __attribute__((device_builtin)) struct double3 double3;
+typedef __attribute__((device_builtin)) struct double4 double4;
+
+
+
+
+
+
+
+struct __attribute__((device_builtin)) dim3
+{
+    unsigned int x, y, z;
+
+
+
+
+
+};
+
+typedef __attribute__((device_builtin)) struct dim3 dim3;
+# 64 "/usr/local/cuda-7.0//include/builtin_types.h" 2 3
+# 264 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 2 3
+# 1 "/usr/local/cuda-7.0//include/device_launch_parameters.h" 1 3
+# 71 "/usr/local/cuda-7.0//include/device_launch_parameters.h" 3
+uint3 __attribute__((device_builtin)) extern const threadIdx;
+uint3 __attribute__((device_builtin)) extern const blockIdx;
+dim3 __attribute__((device_builtin)) extern const blockDim;
+dim3 __attribute__((device_builtin)) extern const gridDim;
+int __attribute__((device_builtin)) extern const warpSize;
+# 265 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 2 3
+# 1 "/usr/local/cuda-7.0//include/crt/storage_class.h" 1 3
+# 265 "/usr/local/cuda-7.0//include/crt/device_runtime.h" 2 3
+# 214 "/usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h" 2 3
+struct __C3 { struct __C2 *regions; void **obj_table; struct __C1 *array_table; unsigned short saved_region_number;char __nv_no_debug_dummy_end_padding_0[6];}; struct __C5 { const struct __type_info *tinfo; unsigned char flags; unsigned char *ptr_flags;}; struct __C6 { long setjmp_buffer[25]; struct __C5 *catch_entries; void *rtinfo; unsigned short region_number;char __nv_no_debug_dummy_end_padding_0[6];}; union __C7 { struct __C6 try_block; struct __C3 function; struct __C5 *throw_spec;}; struct __C8 { struct __C8 *next; unsigned char kind; union __C7 variant;};
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+union _ZZ10__signbitlEUt_ {
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+long double __l;
+# 153 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+int __i[3];};
+# 102 "/usr/include/x86_64-linux-gnu/bits/stdio2.h" 3
+ __attribute__((device_builtin)) extern __attribute__((device)) __inline__ __attribute__((__artificial__)) __attribute__((__always_inline__)) int printf(const char *__restrict__, ...);
+# 127 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+ __attribute__((device_builtin)) extern __attribute__((device)) __inline__ __attribute__((__always_inline__)) __attribute__((__nothrow__)) __attribute__((__const__)) int __signbitf(float);
+# 139 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+ __attribute__((device_builtin)) extern __attribute__((device)) __inline__ __attribute__((__always_inline__)) __attribute__((__nothrow__)) __attribute__((__const__)) int __signbit(double);
+# 151 "/usr/include/x86_64-linux-gnu/bits/mathinline.h" 3
+ __attribute__((device_builtin)) extern __attribute__((device)) __inline__ __attribute__((__always_inline__)) __attribute__((__nothrow__)) __attribute__((__const__)) int __signbitl(long double);
+# 9 "regfile.cu"
+__attribute__((global)) extern void kempty_4(unsigned *);
+# 10 "regfile.cu"
+__attribute__((global)) extern void kempty_8(unsigned *);
+# 11 "regfile.cu"
+__attribute__((global)) extern void kempty_12(unsigned *);
+# 12 "regfile.cu"
+__attribute__((global)) extern void kempty_16(unsigned *);
+# 13 "regfile.cu"
+__attribute__((global)) extern void kempty_20(unsigned *);
+# 14 "regfile.cu"
+__attribute__((global)) extern void kempty_24(unsigned *);
+# 15 "regfile.cu"
+__attribute__((global)) extern void kempty_28(unsigned *);
+# 16 "regfile.cu"
+__attribute__((global)) extern void kempty_32(unsigned *);
+# 17 "regfile.cu"
+__attribute__((global)) extern void kempty_36(unsigned *);
+# 18 "regfile.cu"
+__attribute__((global)) extern void kempty_40(unsigned *);
+# 19 "regfile.cu"
+__attribute__((global)) extern void kempty_44(unsigned *);
+# 20 "regfile.cu"
+__attribute__((global)) extern void kempty_48(unsigned *);
+# 21 "regfile.cu"
+__attribute__((global)) extern void kempty_52(unsigned *);
+# 22 "regfile.cu"
+__attribute__((global)) extern void kempty_56(unsigned *);
+# 23 "regfile.cu"
+__attribute__((global)) extern void kempty_60(unsigned *);
+# 24 "regfile.cu"
+__attribute__((global)) extern void kempty_64(unsigned *);
+# 25 "regfile.cu"
+__attribute__((global)) extern void kempty_68(unsigned *);
+# 26 "regfile.cu"
+__attribute__((global)) extern void kempty_72(unsigned *);
+# 27 "regfile.cu"
+__attribute__((global)) extern void kempty_76(unsigned *);
+# 28 "regfile.cu"
+__attribute__((global)) extern void kempty_80(unsigned *);
+# 29 "regfile.cu"
+__attribute__((global)) extern void kempty_84(unsigned *);
+# 30 "regfile.cu"
+__attribute__((global)) extern void kempty_88(unsigned *);
+# 31 "regfile.cu"
+__attribute__((global)) extern void kempty_92(unsigned *);
+# 32 "regfile.cu"
+__attribute__((global)) extern void kempty_96(unsigned *);
+# 33 "regfile.cu"
+__attribute__((global)) extern void kempty_100(unsigned *);
+# 34 "regfile.cu"
+__attribute__((global)) extern void kempty_104(unsigned *);
+# 35 "regfile.cu"
+__attribute__((global)) extern void kempty_108(unsigned *);
+# 36 "regfile.cu"
+__attribute__((global)) extern void kempty_112(unsigned *);
+# 37 "regfile.cu"
+__attribute__((global)) extern void kempty_116(unsigned *);
+# 38 "regfile.cu"
+__attribute__((global)) extern void kempty_120(unsigned *);
+# 39 "regfile.cu"
+__attribute__((global)) extern void kempty_124(unsigned *);
+# 40 "regfile.cu"
+__attribute__((global)) extern void kempty_128(unsigned *);
+# 41 "regfile.cu"
+__attribute__((global)) extern void kempty_132(unsigned *);
+# 1 "/usr/local/cuda-7.0//include/common_functions.h" 1
+# 219 "/usr/local/cuda-7.0//include/common_functions.h"
+# 1 "/usr/local/cuda-7.0//include/math_functions.h" 1 3
+# 9822 "/usr/local/cuda-7.0//include/math_functions.h" 3
+# 1 "/usr/local/cuda-7.0//include/math_functions.hpp" 1 3
+# 9823 "/usr/local/cuda-7.0//include/math_functions.h" 2 3
+
+
+
+# 1 "/usr/local/cuda-7.0//include/math_functions_dbl_ptx3.h" 1 3
+# 262 "/usr/local/cuda-7.0//include/math_functions_dbl_ptx3.h" 3
+# 1 "/usr/local/cuda-7.0//include/math_functions_dbl_ptx3.hpp" 1 3
+# 263 "/usr/local/cuda-7.0//include/math_functions_dbl_ptx3.h" 2 3
+# 9827 "/usr/local/cuda-7.0//include/math_functions.h" 2 3
+# 220 "/usr/local/cuda-7.0//include/common_functions.h" 2
+# 43 "regfile.cu" 2
+# 119 "/usr/local/cuda-7.0//include/common_functions.h"
+ __attribute__((device_builtin)) extern __attribute__((device)) __attribute__((__artificial__)) __attribute__((__always_inline__)) int printf(const char *, ...);
+# 9 "regfile.cu"
+__attribute__((global)) void kempty_4(
+# 9 "regfile.cu"
+unsigned *out){
+# 9 "regfile.cu"
+{
+# 9 "regfile.cu"
+# 9 "regfile.cu"
+}}
+# 10 "regfile.cu"
+__attribute__((global)) void kempty_8(
+# 10 "regfile.cu"
+unsigned *out){
+# 10 "regfile.cu"
+{
+# 10 "regfile.cu"
+# 10 "regfile.cu"
+}}
+# 11 "regfile.cu"
+__attribute__((global)) void kempty_12(
+# 11 "regfile.cu"
+unsigned *out){
+# 11 "regfile.cu"
+{
+# 11 "regfile.cu"
+# 11 "regfile.cu"
+}}
+# 12 "regfile.cu"
+__attribute__((global)) void kempty_16(
+# 12 "regfile.cu"
+unsigned *out){
+# 12 "regfile.cu"
+{
+# 12 "regfile.cu"
+# 12 "regfile.cu"
+}}
+# 13 "regfile.cu"
+__attribute__((global)) void kempty_20(
+# 13 "regfile.cu"
+unsigned *out){
+# 13 "regfile.cu"
+{
+# 13 "regfile.cu"
+# 13 "regfile.cu"
+}}
+# 14 "regfile.cu"
+__attribute__((global)) void kempty_24(
+# 14 "regfile.cu"
+unsigned *out){
+# 14 "regfile.cu"
+{
+# 14 "regfile.cu"
+# 14 "regfile.cu"
+}}
+# 15 "regfile.cu"
+__attribute__((global)) void kempty_28(
+# 15 "regfile.cu"
+unsigned *out){
+# 15 "regfile.cu"
+{
+# 15 "regfile.cu"
+# 15 "regfile.cu"
+}}
+# 16 "regfile.cu"
+__attribute__((global)) void kempty_32(
+# 16 "regfile.cu"
+unsigned *out){
+# 16 "regfile.cu"
+{
+# 16 "regfile.cu"
+# 16 "regfile.cu"
+}}
+# 17 "regfile.cu"
+__attribute__((global)) void kempty_36(
+# 17 "regfile.cu"
+unsigned *out){
+# 17 "regfile.cu"
+{
+# 17 "regfile.cu"
+# 17 "regfile.cu"
+}}
+# 18 "regfile.cu"
+__attribute__((global)) void kempty_40(
+# 18 "regfile.cu"
+unsigned *out){
+# 18 "regfile.cu"
+{
+# 18 "regfile.cu"
+# 18 "regfile.cu"
+}}
+# 19 "regfile.cu"
+__attribute__((global)) void kempty_44(
+# 19 "regfile.cu"
+unsigned *out){
+# 19 "regfile.cu"
+{
+# 19 "regfile.cu"
+# 19 "regfile.cu"
+}}
+# 20 "regfile.cu"
+__attribute__((global)) void kempty_48(
+# 20 "regfile.cu"
+unsigned *out){
+# 20 "regfile.cu"
+{
+# 20 "regfile.cu"
+# 20 "regfile.cu"
+}}
+# 21 "regfile.cu"
+__attribute__((global)) void kempty_52(
+# 21 "regfile.cu"
+unsigned *out){
+# 21 "regfile.cu"
+{
+# 21 "regfile.cu"
+# 21 "regfile.cu"
+}}
+# 22 "regfile.cu"
+__attribute__((global)) void kempty_56(
+# 22 "regfile.cu"
+unsigned *out){
+# 22 "regfile.cu"
+{
+# 22 "regfile.cu"
+# 22 "regfile.cu"
+}}
+# 23 "regfile.cu"
+__attribute__((global)) void kempty_60(
+# 23 "regfile.cu"
+unsigned *out){
+# 23 "regfile.cu"
+{
+# 23 "regfile.cu"
+# 23 "regfile.cu"
+}}
+# 24 "regfile.cu"
+__attribute__((global)) void kempty_64(
+# 24 "regfile.cu"
+unsigned *out){
+# 24 "regfile.cu"
+{
+# 24 "regfile.cu"
+# 24 "regfile.cu"
+}}
+# 25 "regfile.cu"
+__attribute__((global)) void kempty_68(
+# 25 "regfile.cu"
+unsigned *out){
+# 25 "regfile.cu"
+{
+# 25 "regfile.cu"
+# 25 "regfile.cu"
+}}
+# 26 "regfile.cu"
+__attribute__((global)) void kempty_72(
+# 26 "regfile.cu"
+unsigned *out){
+# 26 "regfile.cu"
+{
+# 26 "regfile.cu"
+# 26 "regfile.cu"
+}}
+# 27 "regfile.cu"
+__attribute__((global)) void kempty_76(
+# 27 "regfile.cu"
+unsigned *out){
+# 27 "regfile.cu"
+{
+# 27 "regfile.cu"
+# 27 "regfile.cu"
+}}
+# 28 "regfile.cu"
+__attribute__((global)) void kempty_80(
+# 28 "regfile.cu"
+unsigned *out){
+# 28 "regfile.cu"
+{
+# 28 "regfile.cu"
+# 28 "regfile.cu"
+}}
+# 29 "regfile.cu"
+__attribute__((global)) void kempty_84(
+# 29 "regfile.cu"
+unsigned *out){
+# 29 "regfile.cu"
+{
+# 29 "regfile.cu"
+# 29 "regfile.cu"
+}}
+# 30 "regfile.cu"
+__attribute__((global)) void kempty_88(
+# 30 "regfile.cu"
+unsigned *out){
+# 30 "regfile.cu"
+{
+# 30 "regfile.cu"
+# 30 "regfile.cu"
+}}
+# 31 "regfile.cu"
+__attribute__((global)) void kempty_92(
+# 31 "regfile.cu"
+unsigned *out){
+# 31 "regfile.cu"
+{
+# 31 "regfile.cu"
+# 31 "regfile.cu"
+}}
+# 32 "regfile.cu"
+__attribute__((global)) void kempty_96(
+# 32 "regfile.cu"
+unsigned *out){
+# 32 "regfile.cu"
+{
+# 32 "regfile.cu"
+# 32 "regfile.cu"
+}}
+# 33 "regfile.cu"
+__attribute__((global)) void kempty_100(
+# 33 "regfile.cu"
+unsigned *out){
+# 33 "regfile.cu"
+{
+# 33 "regfile.cu"
+# 33 "regfile.cu"
+}}
+# 34 "regfile.cu"
+__attribute__((global)) void kempty_104(
+# 34 "regfile.cu"
+unsigned *out){
+# 34 "regfile.cu"
+{
+# 34 "regfile.cu"
+# 34 "regfile.cu"
+}}
+# 35 "regfile.cu"
+__attribute__((global)) void kempty_108(
+# 35 "regfile.cu"
+unsigned *out){
+# 35 "regfile.cu"
+{
+# 35 "regfile.cu"
+# 35 "regfile.cu"
+}}
+# 36 "regfile.cu"
+__attribute__((global)) void kempty_112(
+# 36 "regfile.cu"
+unsigned *out){
+# 36 "regfile.cu"
+{
+# 36 "regfile.cu"
+# 36 "regfile.cu"
+}}
+# 37 "regfile.cu"
+__attribute__((global)) void kempty_116(
+# 37 "regfile.cu"
+unsigned *out){
+# 37 "regfile.cu"
+{
+# 37 "regfile.cu"
+# 37 "regfile.cu"
+}}
+# 38 "regfile.cu"
+__attribute__((global)) void kempty_120(
+# 38 "regfile.cu"
+unsigned *out){
+# 38 "regfile.cu"
+{
+# 38 "regfile.cu"
+# 38 "regfile.cu"
+}}
+# 39 "regfile.cu"
+__attribute__((global)) void kempty_124(
+# 39 "regfile.cu"
+unsigned *out){
+# 39 "regfile.cu"
+{
+# 39 "regfile.cu"
+# 39 "regfile.cu"
+}}
+# 40 "regfile.cu"
+__attribute__((global)) void kempty_128(
+# 40 "regfile.cu"
+unsigned *out){
+# 40 "regfile.cu"
+{
+# 40 "regfile.cu"
+# 40 "regfile.cu"
+}}
+# 41 "regfile.cu"
+__attribute__((global)) void kempty_132(
+# 41 "regfile.cu"
+unsigned *out){
+# 41 "regfile.cu"
+{
+# 41 "regfile.cu"
+# 41 "regfile.cu"
+}}
