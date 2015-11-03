@@ -39,6 +39,17 @@ __global__ void kempty_120 (unsigned int* out) {}
 __global__ void kempty_124 (unsigned int* out) {}
 __global__ void kempty_128 (unsigned int* out) {}
 __global__ void kempty_132 (unsigned int* out) {}
+__global__ void kempty_144 (unsigned int* out) {}
+__global__ void kempty_160 (unsigned int* out) {}
+__global__ void kempty_176 (unsigned int* out) {}
+__global__ void kempty_192 (unsigned int* out) {}
+__global__ void kempty_208 (unsigned int* out) {}
+__global__ void kempty_224 (unsigned int* out) {}
+__global__ void kempty_240 (unsigned int* out) {}
+__global__ void kempty_256 (unsigned int* out) {}
+__global__ void kempty_512 (unsigned int* out) {}
+__global__ void kempty_1024 (unsigned int* out) {}
+__global__ void kempty_4096 (unsigned int* out) {}
 }
 
 
@@ -101,6 +112,17 @@ void measure_regfile()
 	REGTEST1(120);
 	REGTEST1(124);
 	REGTEST1(128);
+	REGTEST1(144);
+	REGTEST1(160);
+	REGTEST1(176);
+	REGTEST1(192);
+	REGTEST1(208);
+	REGTEST1(224);
+	REGTEST1(240);
+	REGTEST1(256);
+	REGTEST1(512);
+	REGTEST1(1024);
+	REGTEST1(4096);
 			
 	printf ("\n");
 	
