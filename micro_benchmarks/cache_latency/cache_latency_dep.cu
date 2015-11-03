@@ -134,7 +134,7 @@ int main(int argc, char **argv)
                 exit(-1);                                                                             
 
         } 	
-
+/*
 	cout<<"Start times\n";
 	for(int i=0; i<ITERATIONS; i++)
 	{
@@ -146,11 +146,11 @@ int main(int argc, char **argv)
         {
                 cout<<latency[i+ITERATIONS]<<" ";
         }
-	
+*/	
 	cout<<"\nLatency\n";
         for(int i=0; i<ITERATIONS; i++)
         {
-                cout<<latency[i+ITERATIONS] - latency[i]<<" ";
+                cout<<(latency[i+ITERATIONS] - latency[i])/ITERATIONS<<" ";
         }
 	
 	cout<<endl;
