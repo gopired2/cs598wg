@@ -168,22 +168,18 @@ int main(int argc, char **argv)
 		
 	    //double t_time = 10000000;
 
-	    for(int k=0; k<n_test; k++)
-	    {
-	    	//startTime(&t_timer);
-	    	vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, numElements, n_elements,n_elements_thread);
-		cudaDeviceSynchronize();
+	   //startTime(&t_timer);
+	   vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, numElements, n_elements,n_elements_thread);
+	   cudaDeviceSynchronize();
 	    	//stopTime(&t_timer);
-	    	errorFlag = cudaGetLastError();
+	   errorFlag = cudaGetLastError();
 	 
-	    	if (errorFlag != cudaSuccess)
-	    	{
+	    if (errorFlag != cudaSuccess)
+	    {
 			fprintf(stderr, "Failed to launch vectorAdd kernel (error code %s)!\n", cudaGetErrorString(errorFlag));
 			exit(EXIT_FAILURE);
-	    	}
+	    }
 		
-
-            }
 
 	    // Copy the device result vector in device memory to the host result vector
 	    // in host memory.
