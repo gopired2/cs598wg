@@ -20,18 +20,19 @@ using namespace std;
 // Vector addition Kernel
 // Device kernel
 
-__global__ void vectorAdd ( float *A, float *B, float *C, int numElements, int elementsPerThread)
+__global__ void vectorAdd ( float *A, float *B, float *C, int totalElements, int numElements, int elementsPerThread)
 {
         long unsigned tid = blockDim.x * blockIdx.x + (threadIdx.x);
 	int i;
 
 	for(i=0; i<elementsPerThread; i++)
 	{
-		tid = tid + numElements;
-	        if (tid < numElements)
+		//tid = tid + numElements;
+	        if (tid < totalElements)
         	{
 			C[tid] = A[tid] + B[tid];
         	}
+		tid = tid + numElements;
 	}
 
 }
@@ -170,7 +171,7 @@ int main(int argc, char **argv)
 	    for(int k=0; k<n_test; k++)
 	    {
 	    	//startTime(&t_timer);
-	    	vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, n_elements,n_elements_thread);
+	    	vectorAdd<<<blocksPerGrid, threadsPerBlock>>>(d_A, d_B, d_C, numElements, n_elements,n_elements_thread);
 		cudaDeviceSynchronize();
 	    	//stopTime(&t_timer);
 	    	errorFlag = cudaGetLastError();
