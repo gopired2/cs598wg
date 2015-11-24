@@ -52,7 +52,6 @@ int main(int argc, char**argv) {
     printf("Allocating device variables..."); fflush(stdout);
     startTime(&timer);
 
-    //INSERT CODE HERE
     float* A_d ; 
     int success = cudaMalloc( (void**) &A_d, sizeof(float)*n) ; 
 
@@ -71,7 +70,6 @@ int main(int argc, char**argv) {
     printf("Copying data from host to device..."); fflush(stdout);
     startTime(&timer);
 
-    //INSERT CODE HERE
     success = cudaMemcpy (A_d,A_h,sizeof(float)*n, cudaMemcpyHostToDevice);
 
     success = cudaMemcpy (B_d,B_h,sizeof(float)*n, cudaMemcpyHostToDevice);
@@ -85,7 +83,6 @@ int main(int argc, char**argv) {
     printf("Launching kernel..."); fflush(stdout);
     startTime(&timer);
 
-    //INSERT CODE HERE
 /*
     int numBlocks = ceil((n-1)/256) + 1;
     printf("NumBlocks %f\n",numBlocks) ;
@@ -106,8 +103,6 @@ int main(int argc, char**argv) {
     printf("Copying data from device to host..."); fflush(stdout);
     startTime(&timer);
 
-    //INSERT CODE HERE
-
     success = cudaMemcpy (C_h,C_d,sizeof(float)*n, cudaMemcpyDeviceToHost);
 
     cudaDeviceSynchronize();
@@ -124,8 +119,6 @@ int main(int argc, char**argv) {
     free(A_h);
     free(B_h);
     free(C_h);
-
-    //INSERT CODE HERE
 
     cudaFree(A_d);
     cudaFree(B_d);
