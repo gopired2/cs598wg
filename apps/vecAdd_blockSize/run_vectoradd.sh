@@ -17,7 +17,7 @@ while [  $COUNTER -lt 100000000 ]; do
         let COUNTER=COUNTER*2
 done
 
-        let BLOCK=BLOCK+128
+        let BLOCK=BLOCK*2
 done
 
 COUNTER=1
